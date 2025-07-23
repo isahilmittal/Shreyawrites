@@ -11,7 +11,7 @@ import { ArrowDown, PenTool, Quote, Edit, Type, Feather, Sparkles, BookOpen } fr
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col items-center justify-start pt-40 md:pt-48 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
+      <section style={{height: '100svh'}} className="w-full flex flex-col items-center justify-center bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
         <div className="absolute top-[20%] left-[10%] md:top-[25%] md:left-[30%] text-primary/20">
           <PenTool size={80} strokeWidth={1} className="-rotate-12" />
         </div>
@@ -43,7 +43,7 @@ export default function Home() {
           </p>
         </div>
         
-        <div className="absolute bottom-12 animate-bounce">
+        <div className="absolute bottom-8 animate-bounce">
           <ArrowDown className="h-8 w-8 text-primary" />
         </div>
       </section>
