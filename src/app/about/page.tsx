@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="md:col-span-1 flex justify-center">
           <div className="relative h-64 w-64 rounded-full overflow-hidden shadow-lg">
             <Image
-              src="https://firebasestorage.googleapis.com/v0/b/project-id.appspot.com/o/14987f2e-07a5-4876-857e-71649646b5a3.png?alt=media"
+              src="https://i.postimg.cc/wMPxCW8k/Image-9.png"
               alt="A professional headshot of Shreya"
               fill
               className="object-cover"
