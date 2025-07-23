@@ -6,12 +6,25 @@ import Image from 'next/image';
 import { projects } from '@/lib/projects';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, PenTool, Quote, Edit, Type } from 'lucide-react';
 
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col items-center justify-center bg-background text-foreground sticky top-0 -z-10">
+      <section className="h-screen w-full flex flex-col items-center justify-center bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 text-primary/20">
+          <PenTool size={80} strokeWidth={1} className="-rotate-12" />
+        </div>
+        <div className="absolute bottom-1/4 right-1/4 text-primary/20">
+          <Quote size={100} strokeWidth={1} className="rotate-12" />
+        </div>
+        <div className="absolute top-1/3 right-1/3 text-primary/20">
+           <Edit size={60} strokeWidth={1} className="rotate-6" />
+        </div>
+        <div className="absolute bottom-1/2 left-1/4 text-primary/20">
+           <Type size={70} strokeWidth={1} className="-rotate-6" />
+        </div>
+
         <div className="text-center px-4">
           <h1 className="text-6xl font-bold tracking-tighter sm:text-7xl lg:text-9xl font-headline">
             Shreya Singh
