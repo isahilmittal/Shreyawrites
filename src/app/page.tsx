@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { projects } from '@/lib/projects';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowDown, PenTool, Quote, Edit, Type } from 'lucide-react';
+import { ArrowDown, PenTool, Quote, Edit, Type, Feather, Sparkles, BookOpen } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -24,6 +24,16 @@ export default function Home() {
         <div className="absolute bottom-1/2 left-1/4 text-primary/20">
            <Type size={70} strokeWidth={1} className="-rotate-6" />
         </div>
+        <div className="absolute top-1/2 right-1/4 text-primary/20">
+            <Feather size={90} strokeWidth={1} className="rotate-12" />
+        </div>
+        <div className="absolute bottom-1/3 left-1/3 text-primary/20">
+            <Sparkles size={50} strokeWidth={1} className="-rotate-12" />
+        </div>
+        <div className="absolute top-3/4 left-1/2 text-primary/20">
+            <BookOpen size={70} strokeWidth={1} className="rotate-6" />
+        </div>
+
 
         <div className="text-center px-4">
           <h1 className="text-6xl font-bold tracking-tighter sm:text-7xl lg:text-9xl font-headline">
