@@ -11,7 +11,7 @@ import { ArrowDown, PenTool, Quote, Edit, Type } from 'lucide-react';
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col items-center justify-center bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
+      <section className="h-screen w-full flex flex-col items-center justify-start pt-32 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 text-primary/20">
           <PenTool size={80} strokeWidth={1} className="-rotate-12" />
         </div>
