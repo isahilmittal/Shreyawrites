@@ -11,31 +11,30 @@ import { ArrowDown, PenTool, Quote, Edit, Type, Feather, Sparkles, BookOpen } fr
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col items-center justify-center pt-20 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
-        <div className="absolute top-[20%] left-[30%] text-primary/20">
+      <section className="h-screen w-full flex flex-col items-center justify-start pt-40 md:pt-48 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
+        <div className="absolute top-[20%] left-[10%] md:top-[25%] md:left-[30%] text-primary/20">
           <PenTool size={80} strokeWidth={1} className="-rotate-12" />
         </div>
-        <div className="absolute bottom-[20%] right-[30%] text-primary/20">
+        <div className="absolute bottom-[15%] right-[10%] md:bottom-[20%] md:right-[30%] text-primary/20">
           <Quote size={100} strokeWidth={1} className="rotate-12" />
         </div>
-        <div className="absolute top-[25%] right-[35%] text-primary/20">
+        <div className="absolute top-[15%] right-[10%] md:top-[25%] md:right-[35%] text-primary/20">
            <Edit size={60} strokeWidth={1} className="rotate-6" />
         </div>
-        <div className="absolute bottom-[35%] left-[25%] text-primary/20">
+        <div className="absolute bottom-[25%] left-[5%] md:bottom-[35%] md:left-[25%] text-primary/20">
            <Type size={70} strokeWidth={1} className="-rotate-6" />
         </div>
-        <div className="absolute top-[50%] right-[20%] text-primary/20">
+        <div className="absolute top-[45%] right-[5%] md:top-[50%] md:right-[20%] text-primary/20">
             <Feather size={90} strokeWidth={1} className="rotate-12" />
         </div>
-        <div className="absolute bottom-[25%] left-[38%] text-primary/20">
+        <div className="absolute bottom-[10%] left-[30%] md:bottom-[25%] md:left-[38%] text-primary/20">
             <Sparkles size={50} strokeWidth={1} className="-rotate-12" />
         </div>
-        <div className="absolute top-[60%] left-[22%] text-primary/20">
+        <div className="absolute top-[55%] left-[10%] md:top-[60%] md:left-[22%] text-primary/20">
             <BookOpen size={70} strokeWidth={1} className="rotate-6" />
         </div>
 
-
-        <div className="text-center px-4">
+        <div className="text-center px-4 relative z-10">
           <h1 className="text-6xl font-bold tracking-tighter sm:text-7xl lg:text-9xl font-headline">
             Shreya Singh
           </h1>
@@ -43,6 +42,7 @@ export default function Home() {
             Copywriter
           </p>
         </div>
+        
         <div className="absolute bottom-12 animate-bounce">
           <ArrowDown className="h-8 w-8 text-primary" />
         </div>
