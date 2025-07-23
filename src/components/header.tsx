@@ -51,17 +51,17 @@ export function Header() {
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center space-x-2 mr-6">
             <PenSquare className="h-6 w-6 text-primary" />
-            <span className={cn("font-bold font-headline", isHomePage && !hasScrolled ? 'text-white' : '')}>Shreya Writes</span>
+            <span className="font-bold font-headline">Shreya Writes</span>
           </Link>
           <nav className="hidden md:flex md:space-x-6">
             {navLinks.map((link) => (
-              <NavLink key={link.href} href={link.href} label={link.label} className={cn(isHomePage && !hasScrolled ? 'text-white hover:text-primary' : '')}/>
+              <NavLink key={link.href} href={link.href} label={link.label} className={cn(isHomePage && !hasScrolled ? 'text-muted-foreground hover:text-primary' : '')}/>
             ))}
           </nav>
         </div>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" className={cn("md:hidden", isHomePage && !hasScrolled ? 'text-white hover:text-primary hover:bg-white/10' : '')}>
+            <Button variant="ghost" className={cn("md:hidden", isHomePage && !hasScrolled ? 'text-muted-foreground hover:text-primary hover:bg-black/10' : '')}>
               <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle Menu</span>
             </Button>
