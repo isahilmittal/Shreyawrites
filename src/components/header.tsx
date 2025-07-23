@@ -12,7 +12,6 @@ const navLinks = [
   { href: '/', label: 'Projects' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
-  { href: '/copy-feedback', label: 'AI Feedback' },
 ];
 
 export function Header() {
