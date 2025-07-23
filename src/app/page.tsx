@@ -11,26 +11,26 @@ import { ArrowDown, PenTool, Quote, Edit, Type, Feather, Sparkles, BookOpen } fr
 export default function Home() {
   return (
     <>
-      <section className="h-screen w-full flex flex-col items-center justify-start pt-32 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 text-primary/20">
+      <section className="h-screen w-full flex flex-col items-center justify-center pt-20 bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
+        <div className="absolute top-[20%] left-[30%] text-primary/20">
           <PenTool size={80} strokeWidth={1} className="-rotate-12" />
         </div>
-        <div className="absolute bottom-1/4 right-1/4 text-primary/20">
+        <div className="absolute bottom-[20%] right-[30%] text-primary/20">
           <Quote size={100} strokeWidth={1} className="rotate-12" />
         </div>
-        <div className="absolute top-1/3 right-1/3 text-primary/20">
+        <div className="absolute top-[25%] right-[35%] text-primary/20">
            <Edit size={60} strokeWidth={1} className="rotate-6" />
         </div>
-        <div className="absolute bottom-1/2 left-1/4 text-primary/20">
+        <div className="absolute bottom-[35%] left-[25%] text-primary/20">
            <Type size={70} strokeWidth={1} className="-rotate-6" />
         </div>
-        <div className="absolute top-1/2 right-1/4 text-primary/20">
+        <div className="absolute top-[50%] right-[20%] text-primary/20">
             <Feather size={90} strokeWidth={1} className="rotate-12" />
         </div>
-        <div className="absolute bottom-1/3 left-1/3 text-primary/20">
+        <div className="absolute bottom-[25%] left-[38%] text-primary/20">
             <Sparkles size={50} strokeWidth={1} className="-rotate-12" />
         </div>
-        <div className="absolute top-3/4 left-1/2 text-primary/20">
+        <div className="absolute top-[60%] left-[22%] text-primary/20">
             <BookOpen size={70} strokeWidth={1} className="rotate-6" />
         </div>
 
