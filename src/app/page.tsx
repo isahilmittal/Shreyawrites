@@ -311,20 +311,39 @@ export default function Home() {
                 I've had the pleasure of collaborating with a diverse range of brands to elevate their voice and drive results.
               </p>
             </div>
-            <div className="grid grid-cols-6 gap-4 items-center">
-              {brands.map((brand) => (
-                <div key={brand.id} className="flex justify-center">
-                  <div className="relative h-24 w-24">
-                    <Image
-                      src={brand.logoUrl}
-                      alt={`${brand.name} logo`}
-                      fill
-                      className="object-contain grayscale opacity-60 transition-all hover:opacity-100 hover:grayscale-0"
-                      data-ai-hint={brand.imageHint}
-                    />
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 items-center">
+              {brands.slice(0, 15).map((brand, i) => {
+                const sizes = [
+                  'lg:col-span-2 lg:row-span-2', 
+                  '', 
+                  '', 
+                  'md:col-span-2', 
+                  '', 
+                  '', 
+                  'lg:col-span-2', 
+                  '', 
+                  '', 
+                  'md:col-span-2',
+                  '', 
+                  'lg:col-span-2 lg:row-span-2', 
+                  '', 
+                  '', 
+                  'md:col-span-2'
+                ];
+                return (
+                  <div key={brand.id} className={`flex justify-center ${sizes[i] || ''}`}>
+                    <div className="relative h-24 w-24">
+                      <Image
+                        src={brand.logoUrl}
+                        alt={`${brand.name} logo`}
+                        fill
+                        className="object-contain grayscale opacity-60 transition-all hover:opacity-100 hover:grayscale-0"
+                        data-ai-hint={brand.imageHint}
+                      />
+                    </div>
                   </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
           </div>
         </section>
