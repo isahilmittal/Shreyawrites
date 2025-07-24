@@ -55,7 +55,7 @@ export default function Home() {
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">About Me</h2>
                     <p className="mt-6 text-xl text-muted-foreground">
-                        For over 8 years, I've been helping brands find their voice and tell their stories. I believe that great copy is more than just words on a page—it's about building relationships, sparking curiosity, and driving action. My passion lies in understanding an audience and delivering a message that truly resonates.
+                        Hey! I’m a Shreya who lives in the world of hooks, CTAs, and voiceovers that don’t sound like voiceovers. I write the kind of content that makes people stop scrolling, giggle a little, and then go, “Okay wait… I actually want this.”
                     </p>
                 </div>
             </div>

@@ -32,7 +32,7 @@ export default function AboutPage() {
             Copywriter
           </p>
           <p className="mt-6 text-lg text-muted-foreground">
-            For over 8 years, I've been helping brands find their voice and tell their stories. I believe that great copy is more than just words on a page—it's about building relationships, sparking curiosity, and driving action. My passion lies in understanding an audience and delivering a message that truly resonates.
+            Hey! I’m a Shreya who lives in the world of hooks, CTAs, and voiceovers that don’t sound like voiceovers. I write the kind of content that makes people stop scrolling, giggle a little, and then go, “Okay wait… I actually want this.”
           </p>
         </div>
         <div className="md:col-span-1 flex justify-center">
