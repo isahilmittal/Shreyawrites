@@ -6,51 +6,39 @@ import Image from 'next/image';
 import { projects } from '@/lib/projects';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { ArrowDown, PenTool, Quote, Edit, Type, Feather, Sparkles, BookOpen } from 'lucide-react';
 
 export default function Home() {
   return (
     <>
-      <section style={{height: '100svh'}} className="w-full flex flex-col items-center justify-center bg-background text-foreground sticky top-0 -z-10 overflow-hidden">
-        <div className="absolute top-[20%] left-[10%] md:top-[25%] md:left-[30%] text-primary/20">
-          <PenTool size={80} strokeWidth={1} className="-rotate-12" />
-        </div>
-        <div className="absolute bottom-[15%] right-[10%] md:bottom-[20%] md:right-[30%] text-primary/20">
-          <Quote size={100} strokeWidth={1} className="rotate-12" />
-        </div>
-        <div className="absolute top-[15%] right-[10%] md:top-[25%] md:right-[35%] text-primary/20">
-           <Edit size={60} strokeWidth={1} className="rotate-6" />
-        </div>
-        <div className="absolute bottom-[25%] left-[5%] md:bottom-[35%] md:left-[25%] text-primary/20">
-           <Type size={70} strokeWidth={1} className="-rotate-6" />
-        </div>
-        <div className="absolute top-[45%] right-[5%] md:top-[50%] md:right-[20%] text-primary/20">
-            <Feather size={90} strokeWidth={1} className="rotate-12" />
-        </div>
-        <div className="absolute bottom-[10%] left-[30%] md:bottom-[25%] md:left-[38%] text-primary/20">
-            <Sparkles size={50} strokeWidth={1} className="-rotate-12" />
-        </div>
-        <div className="absolute top-[55%] left-[10%] md:top-[60%] md:left-[22%] text-primary/20">
-            <BookOpen size={70} strokeWidth={1} className="rotate-6" />
-        </div>
-
-        <div className="text-center px-4 relative z-10">
-          <h1 className="text-6xl font-bold tracking-tighter sm:text-7xl lg:text-9xl font-headline">
-            Shreya Singh
-          </h1>
-          <p className="text-3xl text-primary font-medium mt-2">
-            Copywriter
-          </p>
-        </div>
-        
-        <div className="absolute bottom-8 animate-bounce">
-          <ArrowDown className="h-8 w-8 text-primary" />
+      <section className="py-20 lg:py-32">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="md:col-span-1">
+              <h1 className="text-6xl font-bold tracking-tighter text-foreground sm:text-7xl lg:text-8xl font-headline">
+                Shreya Singh
+              </h1>
+              <p className="text-3xl text-primary font-medium mt-2">
+                Copywriter
+              </p>
+            </div>
+            <div className="md:col-span-1 flex justify-center">
+              <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden shadow-lg">
+                <Image
+                  src="https://i.postimg.cc/gxZqbX84/image.png"
+                  alt="A professional headshot of Shreya"
+                  fill
+                  className="object-cover"
+                  data-ai-hint="professional headshot"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-
+      
       <div className="relative z-10 bg-background">
 
-        <section className="py-20 lg:py-32">
+        <section className="py-20 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">About Me</h2>

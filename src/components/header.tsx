@@ -9,7 +9,7 @@ import { Menu, PenSquare } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const navLinks = [
-  { href: '/', label: 'Projects' },
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -17,16 +17,7 @@ const navLinks = [
 export function Header() {
   const pathname = usePathname();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
+  
   const NavLink = ({ href, label, className }: { href: string; label: string, className?: string; }) => (
     <Link
       href={href}
@@ -41,12 +32,8 @@ export function Header() {
     </Link>
   );
   
-  const isHomePage = pathname === '/';
-
   return (
-    <header className={cn("sticky top-0 z-50 w-full border-b", 
-        isHomePage && !hasScrolled ? 'bg-transparent border-transparent' : 'bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
-    )}>
+    <header className={cn("sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60")}>
       <div className="container flex h-14 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="flex items-center space-x-2 mr-6">
@@ -55,13 +42,13 @@ export function Header() {
           </Link>
           <nav className="hidden md:flex md:space-x-6">
             {navLinks.map((link) => (
-              <NavLink key={link.href} href={link.href} label={link.label} className={cn(isHomePage && !hasScrolled ? 'text-muted-foreground hover:text-primary' : '')}/>
+              <NavLink key={link.href} href={link.href} label={link.label} />
             ))}
           </nav>
         </div>
         <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
           <SheetTrigger asChild>
-            <Button variant="ghost" className={cn("md:hidden", isHomePage && !hasScrolled ? 'text-muted-foreground hover:text-primary hover:bg-black/10' : '')}>
+            <Button variant="ghost" className="md:hidden">
               <Menu className="h-5 w-5" />
               <span className="sr-only">Toggle Menu</span>
             </Button>
