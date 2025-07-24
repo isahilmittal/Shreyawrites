@@ -276,8 +276,11 @@ export default function Home() {
                   </Card>
                 ))}
               </div>
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">More Brands I've Worked With</h2>
+              </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-4 items-center">
-                {brands.slice(3).map((brand, index) => (
+                {brands.slice(3).map((brand) => (
                     <div key={brand.id} className="flex justify-center group">
                         <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
                         <Image
@@ -317,5 +320,3 @@ export default function Home() {
     </>
   );
 }
-
-    
