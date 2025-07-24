@@ -7,7 +7,7 @@ import { projects } from '@/lib/projects';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { ClipboardList, Megaphone, Users } from 'lucide-react';
+import { ClipboardList, Megaphone, Users, PenTool, Rocket, Zap } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -187,38 +187,40 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">What I Do (and love doing)</h2>
             </div>
-            <div className="space-y-16">
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="md:col-span-1">
-                  <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">Influencer & UGC Scripts</h3>
-                  <p className="text-xl text-muted-foreground">Whether it’s a GRWM, product demo, or story-style hook, I write it like a friend’s talking to you, not a brand.</p>
-                </div>
-                <div className="md:col-span-1 flex justify-center text-primary">
-                  <Users className="w-32 h-32" />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="md:col-span-1 md:order-2">
-                  <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">In-House Content</h3>
-                  <p className="text-xl text-muted-foreground">Festive campaigns, launch reels, how-to scripts, fun captions... I help brands sound less “salesy” and more real.</p>
-                </div>
-                <div className="md:col-span-1 md:order-1 flex justify-center text-primary">
-                  <ClipboardList className="w-32 h-32" />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="md:col-span-1">
-                  <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">Short Ad Copies</h3>
-                  <p className="text-xl text-muted-foreground">From Meta ads to Story voiceovers, I make sure the first 3 seconds grab attention and the rest keeps them hooked.</p>
-                </div>
-                <div className="md:col-span-1 flex justify-center text-primary">
-                  <Megaphone className="w-32 h-32" />
-                </div>
-              </div>
-
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <Card className="text-center">
+                    <CardHeader>
+                        <div className="mx-auto bg-primary/10 text-primary rounded-full p-3 w-fit">
+                            <Users className="h-8 w-8" />
+                        </div>
+                        <CardTitle className="font-headline mt-4">Influencer & UGC Scripts</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Whether it’s a GRWM, product demo, or story-style hook, I write it like a friend’s talking to you, not a brand.</p>
+                    </CardContent>
+                </Card>
+                <Card className="text-center">
+                    <CardHeader>
+                        <div className="mx-auto bg-primary/10 text-primary rounded-full p-3 w-fit">
+                            <ClipboardList className="h-8 w-8" />
+                        </div>
+                        <CardTitle className="font-headline mt-4">In-House Content</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">Festive campaigns, launch reels, how-to scripts, fun captions... I help brands sound less “salesy” and more real.</p>
+                    </CardContent>
+                </Card>
+                <Card className="text-center">
+                    <CardHeader>
+                        <div className="mx-auto bg-primary/10 text-primary rounded-full p-3 w-fit">
+                            <Megaphone className="h-8 w-8" />
+                        </div>
+                        <CardTitle className="font-headline mt-4">Short Ad Copies</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                        <p className="text-muted-foreground">From Meta ads to Story voiceovers, I make sure the first 3 seconds grab attention and the rest keeps them hooked.</p>
+                    </CardContent>
+                </Card>
             </div>
           </div>
         </section>
