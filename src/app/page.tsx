@@ -4,10 +4,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/lib/projects';
+import { brands } from '@/lib/brands';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { ClipboardList, Megaphone, Users, PenTool, Rocket, Zap } from 'lucide-react';
+import { ClipboardList, Megaphone, Users, Instagram } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -260,7 +261,51 @@ export default function Home() {
                 ))}
             </div>
         </section>
+
+        <section className="py-20 lg:py-32 bg-secondary">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Brands that I work with</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {brands.map((brand) => (
+                <Card key={brand.id} className="overflow-hidden">
+                  <CardHeader className="flex-row items-center gap-4 p-4">
+                    <div className="relative h-16 w-16 rounded-full overflow-hidden shrink-0">
+                      <Image
+                        src={brand.logoUrl}
+                        alt={`${brand.name} logo`}
+                        fill
+                        className="object-contain"
+                        data-ai-hint={brand.imageHint}
+                      />
+                    </div>
+                    <div>
+                      <CardTitle className="text-xl font-bold font-headline">{brand.name}</CardTitle>
+                      <Link href={brand.instagramUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors">
+                        <Instagram className="h-4 w-4" />
+                        {brand.instagramUsername}
+                      </Link>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-4 border-t">
+                    <div className="grid grid-cols-3 gap-4 text-center">
+                      {brand.metrics.map((metric) => (
+                        <div key={metric.label}>
+                          <p className="text-2xl font-bold text-primary">{metric.value}</p>
+                          <p className="text-xs text-muted-foreground uppercase tracking-wider">{metric.label}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
 }
+
+    
