@@ -38,7 +38,7 @@ export default function AboutPage() {
         <div className="md:col-span-1 flex justify-center">
           <div className="relative h-80 w-80 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="https://i.postimg.cc/gxZqbX84/image.png"
+              src="https://i.postimg.cc/wR7Y3bqW/image.png"
               alt="A professional headshot of Shreya"
               fill
               className="object-cover"

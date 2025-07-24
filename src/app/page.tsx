@@ -29,7 +29,7 @@ export default function Home() {
             <div className="md:col-span-1 flex justify-center">
               <div className="relative h-64 w-64 md:h-80 md:w-80 rounded-full overflow-hidden shadow-lg">
                 <Image
-                  src="https://i.postimg.cc/gxZqbX84/image.png"
+                  src="https://i.postimg.cc/wR7Y3bqW/image.png"
                   alt="A professional headshot of Shreya"
                   fill
                   className="object-cover"
@@ -139,55 +139,12 @@ export default function Home() {
                 </div>
                 <div className="md:col-span-1 md:order-1">
                   <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-                    If you’ve ever seen a Reel where someone’s raving about a product in the most effortless, un-scripted way?
+                    Or a caption that felt so personal you almost commented with a “so true”?
                   </h2>
                   <p className="mt-6 text-xl text-muted-foreground">
-                    Yeah, that was scripted. By me.
+                    That was me too.
                   </p>
                 </div>
-              </div>
-            </div>
-          </section>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <section className="py-20 lg:py-32 bg-secondary">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">What I Do (and love doing)</h2>
-              </div>
-              <div className="space-y-16">
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                  <div className="md:col-span-1">
-                    <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">Influencer & UGC Scripts</h3>
-                    <p className="text-xl text-muted-foreground">Whether it’s a GRWM, product demo, or story-style hook, I write it like a friend’s talking to you, not a brand.</p>
-                  </div>
-                  <div className="md:col-span-1 flex justify-center text-primary">
-                    <Users className="w-32 h-32" />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                  <div className="md:col-span-1 md:order-2">
-                    <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">In-House Content</h3>
-                    <p className="text-xl text-muted-foreground">Festive campaigns, launch reels, how-to scripts, fun captions... I help brands sound less “salesy” and more real.</p>
-                  </div>
-                  <div className="md:col-span-1 md:order-1 flex justify-center text-primary">
-                    <ClipboardList className="w-32 h-32" />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                  <div className="md:col-span-1">
-                    <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline mb-4">Short Ad Copies</h3>
-                    <p className="text-xl text-muted-foreground">From Meta ads to Story voiceovers, I make sure the first 3 seconds grab attention and the rest keeps them hooked.</p>
-                  </div>
-                  <div className="md:col-span-1 flex justify-center text-primary">
-                    <Megaphone className="w-32 h-32" />
-                  </div>
-                </div>
-
               </div>
             </div>
           </section>
@@ -331,25 +288,8 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 items-center">
                 {brands.slice(0, 15).map((brand, i) => {
-                  const sizes = [
-                    'lg:col-span-2 lg:row-span-2', 
-                    '', 
-                    '', 
-                    'md:col-span-2', 
-                    '', 
-                    '', 
-                    'lg:col-span-2', 
-                    '', 
-                    '', 
-                    'md:col-span-2',
-                    '', 
-                    'lg:col-span-2 lg:row-span-2', 
-                    '', 
-                    '', 
-                    'md:col-span-2'
-                  ];
                   return (
-                    <div key={brand.id} className={`flex justify-center group ${sizes[i] || ''}`}>
+                    <div key={brand.id} className={`flex justify-center group`}>
                       <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
                         <Image
                           src={brand.logoUrl}
