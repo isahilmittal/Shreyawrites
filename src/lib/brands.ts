@@ -15,15 +15,15 @@ export interface Brand {
 export const brands: Brand[] = [
   {
     id: 'brand-a',
-    name: 'Glamour Cosmetics',
-    logoUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'cosmetics logo',
-    instagramUsername: '@glamourcos',
-    instagramUrl: '#',
+    name: 'Shaper Peach',
+    logoUrl: 'https://i.postimg.cc/gX8VVGgQ/Shaper-Peach-Logo.png',
+    imageHint: 'fitness apparel logo',
+    instagramUsername: '@shaperpeachofficial',
+    instagramUrl: 'https://www.instagram.com/shaperpeachofficial/',
     metrics: [
-      { value: '2M+', label: 'Followers' },
-      { value: '5.2%', label: 'Engagement' },
-      { value: '150k+', label: 'Reels Views' },
+      { value: '250K+', label: 'Followers' },
+      { value: '3.5%', label: 'Engagement' },
+      { value: '100k+', label: 'Reels Views' },
     ],
   },
   {
