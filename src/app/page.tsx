@@ -96,6 +96,51 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="py-20 lg:py-32">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div className="md:col-span-1 md:order-2 flex justify-center">
+                <Carousel className="w-full max-w-xs">
+                  <CarouselContent>
+                    <CarouselItem>
+                      <div className="relative h-[480px] w-full rounded-lg overflow-hidden shadow-lg">
+                        <Image
+                          src="https://placehold.co/400x600.png"
+                          alt="Portrait image 1"
+                          fill
+                          className="object-cover"
+                          data-ai-hint="portrait woman"
+                        />
+                      </div>
+                    </CarouselItem>
+                    <CarouselItem>
+                      <div className="relative h-[480px] w-full rounded-lg overflow-hidden shadow-lg">
+                        <Image
+                          src="https://placehold.co/400x600.png"
+                          alt="Portrait image 2"
+                          fill
+                          className="object-cover"
+                          data-ai-hint="portrait woman professional"
+                        />
+                      </div>
+                    </CarouselItem>
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+              </div>
+              <div className="md:col-span-1 md:order-1">
+                <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
+                  If you’ve ever seen a Reel where someone’s raving about a product in the most effortless, un-scripted way?
+                </h2>
+                <p className="mt-6 text-xl text-muted-foreground">
+                  Yeah, that was scripted. By me.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 lg:py-32 bg-secondary">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-12">
@@ -178,3 +223,4 @@ export default function Home() {
     </>
   );
 }
+
