@@ -268,7 +268,7 @@ export default function Home() {
               <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Brands that I work with</h2>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {brands.map((brand) => (
+              {brands.slice(0, 3).map((brand) => (
                 <Card key={brand.id} className="overflow-hidden">
                   <CardHeader className="flex-row items-center gap-4 p-4">
                     <div className="relative h-16 w-16 rounded-full overflow-hidden shrink-0">
@@ -311,10 +311,10 @@ export default function Home() {
                 I've had the pleasure of collaborating with a diverse range of brands to elevate their voice and drive results.
               </p>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 items-center">
+            <div className="grid grid-cols-6 gap-4 items-center">
               {brands.map((brand) => (
                 <div key={brand.id} className="flex justify-center">
-                  <div className="relative h-24 w-48">
+                  <div className="relative h-24 w-24">
                     <Image
                       src={brand.logoUrl}
                       alt={`${brand.name} logo`}
@@ -332,5 +332,3 @@ export default function Home() {
     </>
   );
 }
-
-    
