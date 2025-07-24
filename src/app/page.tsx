@@ -232,14 +232,17 @@ export default function Home() {
               </div>
           </section>
         </AnimatedSection>
-
+        
         <AnimatedSection>
           <section className="py-20 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Brands that I work with</h2>
+                 <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+                  I've had the pleasure of collaborating with a diverse range of brands to elevate their voice and drive results.
+                </p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 {brands.slice(0, 3).map((brand) => (
                   <Card key={brand.id} className="overflow-hidden">
                     <CardHeader className="flex-row items-center gap-4 p-4">
@@ -273,42 +276,27 @@ export default function Home() {
                   </Card>
                 ))}
               </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-4 items-center">
+                {brands.slice(3).map((brand, index) => (
+                    <div key={brand.id} className="flex justify-center group">
+                        <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
+                        <Image
+                            src={brand.logoUrl}
+                            alt={`${brand.name} logo`}
+                            fill
+                            className="object-contain grayscale opacity-60 transition-all group-hover:opacity-100 group-hover:grayscale-0"
+                            data-ai-hint={brand.imageHint}
+                        />
+                        </div>
+                    </div>
+                ))}
+              </div>
             </div>
           </section>
         </AnimatedSection>
-
+        
         <AnimatedSection>
           <section className="py-20 lg:py-32 bg-background">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Brands that I work with</h2>
-                <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-                  I've had the pleasure of collaborating with a diverse range of brands to elevate their voice and drive results.
-                </p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 items-center">
-                {brands.slice(0, 15).map((brand, i) => {
-                  return (
-                    <div key={brand.id} className={`flex justify-center group`}>
-                      <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
-                        <Image
-                          src={brand.logoUrl}
-                          alt={`${brand.name} logo`}
-                          fill
-                          className="object-contain grayscale opacity-60 transition-all group-hover:opacity-100 group-hover:grayscale-0"
-                          data-ai-hint={brand.imageHint}
-                        />
-                      </div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
-          </section>
-        </AnimatedSection>
-
-        <AnimatedSection>
-          <section className="py-20 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Ready to Create Something Amazing?</h2>
@@ -329,3 +317,5 @@ export default function Home() {
     </>
   );
 }
+
+    
