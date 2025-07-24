@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="md:col-span-1">
-              <h1 className="text-6xl font-bold tracking-tighter text-foreground sm:text-7xl lg:text-8xl font-headline">
+              <h1 className="text-5xl font-bold tracking-tighter text-foreground sm:text-7xl lg:text-8xl font-headline">
                 Shreya Singh
               </h1>
               <p className="text-3xl text-primary font-medium mt-2">
