@@ -10,6 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { ClipboardList, Megaphone, Users, Instagram } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/animated-section';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -349,12 +350,12 @@ export default function Home() {
                   ];
                   return (
                     <div key={brand.id} className={`flex justify-center group ${sizes[i] || ''}`}>
-                      <div className="relative h-24 w-24">
+                      <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
                         <Image
                           src={brand.logoUrl}
                           alt={`${brand.name} logo`}
                           fill
-                          className="object-contain grayscale opacity-60 transition-all group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110"
+                          className="object-contain grayscale opacity-60 transition-all group-hover:opacity-100 group-hover:grayscale-0"
                           data-ai-hint={brand.imageHint}
                         />
                       </div>
@@ -365,6 +366,25 @@ export default function Home() {
             </div>
           </section>
         </AnimatedSection>
+
+        <AnimatedSection>
+          <section className="py-20 lg:py-32 bg-secondary">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="max-w-3xl mx-auto text-center">
+                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Ready to Create Something Amazing?</h2>
+                <p className="mt-6 text-xl text-muted-foreground">
+                  I'm currently available for new projects. If you have an idea you're excited about, I'd love to hear from you.
+                </p>
+                <div className="mt-10">
+                  <Button asChild size="lg">
+                    <Link href="/contact">Get in Touch</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </AnimatedSection>
+
       </div>
     </>
   );
