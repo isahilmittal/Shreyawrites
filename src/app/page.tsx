@@ -331,13 +331,13 @@ export default function Home() {
                   'md:col-span-2'
                 ];
                 return (
-                  <div key={brand.id} className={`flex justify-center ${sizes[i] || ''}`}>
+                  <div key={brand.id} className={`flex justify-center group ${sizes[i] || ''}`}>
                     <div className="relative h-24 w-24">
                       <Image
                         src={brand.logoUrl}
                         alt={`${brand.name} logo`}
                         fill
-                        className="object-contain grayscale opacity-60 transition-all hover:opacity-100 hover:grayscale-0"
+                        className="object-contain grayscale opacity-60 transition-all group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-110"
                         data-ai-hint={brand.imageHint}
                       />
                     </div>
