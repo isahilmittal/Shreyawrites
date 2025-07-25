@@ -125,7 +125,7 @@ export default function Home() {
                       <CarouselItem>
                         <div className="relative h-[480px] w-full rounded-lg overflow-hidden shadow-lg">
                           <Image
-                            src="https://placehold.co/400x600.png"
+                            src="https://i.postimg.cc/1nNj0Q8X/image.png"
                             alt="Portrait image 1"
                             fill
                             className="object-cover"
@@ -208,6 +208,50 @@ export default function Home() {
           </section>
         </AnimatedSection>
         
+        <AnimatedSection>
+          <section className="py-20 lg:py-32 bg-background">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">What I Do (and love doing)</h2>
+              </div>
+              <div className="space-y-12">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                  <div className="md:col-span-1 flex justify-center">
+                    <div className="bg-primary/10 text-primary rounded-full p-4 w-20 h-20 flex items-center justify-center">
+                      <Users className="h-10 w-10" />
+                    </div>
+                  </div>
+                  <div className="md:col-span-4">
+                    <h3 className="text-2xl font-bold font-headline mb-2">Influencer & UGC Scripts</h3>
+                    <p className="text-lg text-muted-foreground">Whether it’s a GRWM, product demo, or story-style hook, I write it like a friend’s talking to you, not a brand.</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                  <div className="md:col-span-4 text-right">
+                    <h3 className="text-2xl font-bold font-headline mb-2">In-House Content</h3>
+                    <p className="text-lg text-muted-foreground">Festive campaigns, launch reels, how-to scripts, fun captions... I help brands sound less “salesy” and more real.</p>
+                  </div>
+                  <div className="md:col-span-1 flex justify-center md:order-last">
+                    <div className="bg-primary/10 text-primary rounded-full p-4 w-20 h-20 flex items-center justify-center">
+                      <ClipboardList className="h-10 w-10" />
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                  <div className="md:col-span-1 flex justify-center">
+                    <div className="bg-primary/10 text-primary rounded-full p-4 w-20 h-20 flex items-center justify-center">
+                      <Megaphone className="h-10 w-10" />
+                    </div>
+                  </div>
+                  <div className="md:col-span-4">
+                    <h3 className="text-2xl font-bold font-headline mb-2">Short Ad Copies</h3>
+                    <p className="text-lg text-muted-foreground">From Meta ads to Story voiceovers, I make sure the first 3 seconds grab attention and the rest keeps them hooked.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </AnimatedSection>
         
         <AnimatedSection>
           <section className="py-20 lg:py-32 bg-secondary">
@@ -375,3 +419,5 @@ export default function Home() {
     </>
   );
 }
+
+    
