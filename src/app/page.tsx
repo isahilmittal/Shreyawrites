@@ -162,52 +162,6 @@ export default function Home() {
           </section>
         </AnimatedSection>
 
-        <AnimatedSection>
-          <section className="py-20 lg:py-32">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div className="md:col-span-1 md:order-2 flex justify-center">
-                  <Carousel className="w-full max-w-xs">
-                    <CarouselContent>
-                      <CarouselItem>
-                        <div className="relative h-[480px] w-full rounded-lg overflow-hidden shadow-lg">
-                          <Image
-                            src="https://placehold.co/400x600.png"
-                            alt="Portrait image 1"
-                            fill
-                            className="object-cover"
-                            data-ai-hint="portrait woman"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem>
-                        <div className="relative h-[480px] w-full rounded-lg overflow-hidden shadow-lg">
-                          <Image
-                            src="https://placehold.co/400x600.png"
-                            alt="Portrait image 2"
-                            fill
-                            className="object-cover"
-                            data-ai-hint="portrait woman professional"
-                          />
-                        </div>
-                      </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                  </Carousel>
-                </div>
-                <div className="md:col-span-1 md:order-1">
-                  <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">
-                    Or a caption that felt so personal you almost commented with a “so true”?
-                  </h2>
-                  <p className="mt-6 text-xl text-muted-foreground">
-                    That was me too.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </AnimatedSection>
         
         <AnimatedSection>
           <section className="py-20 lg:py-32 bg-background">
@@ -254,55 +208,7 @@ export default function Home() {
           </section>
         </AnimatedSection>
         
-        <AnimatedSection>
-          <section className="py-20 lg:py-32 bg-background">
-            <div className="container mx-auto px-4 md:px-6">
-              <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">What I Do (and love doing)</h2>
-              </div>
-              <div className="space-y-16">
-
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-                  <div className="md:col-span-1 flex justify-center">
-                    <div className="bg-primary/10 text-primary rounded-full p-6 w-fit">
-                      <Users className="h-12 w-12" />
-                    </div>
-                  </div>
-                  <div className="md:col-span-4">
-                    <h3 className="text-2xl font-bold font-headline mb-2">Influencer & UGC Scripts</h3>
-                    <p className="text-muted-foreground text-lg">Whether it’s a GRWM, product demo, or story-style hook, I write it like a friend’s talking to you, not a brand.</p>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-                  <div className="md:col-span-4 md:order-2 text-right">
-                    <h3 className="text-2xl font-bold font-headline mb-2">In-House Content</h3>
-                    <p className="text-muted-foreground text-lg">Festive campaigns, launch reels, how-to scripts, fun captions... I help brands sound less “salesy” and more real.</p>
-                  </div>
-                  <div className="md:col-span-1 md:order-1 flex justify-center">
-                    <div className="bg-primary/10 text-primary rounded-full p-6 w-fit">
-                      <ClipboardList className="h-12 w-12" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
-                  <div className="md:col-span-1 flex justify-center">
-                    <div className="bg-primary/10 text-primary rounded-full p-6 w-fit">
-                      <Megaphone className="h-12 w-12" />
-                    </div>
-                  </div>
-                  <div className="md:col-span-4">
-                    <h3 className="text-2xl font-bold font-headline mb-2">Short Ad Copies</h3>
-                    <p className="text-muted-foreground text-lg">From Meta ads to Story voiceovers, I make sure the first 3 seconds grab attention and the rest keeps them hooked.</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </section>
-        </AnimatedSection>
-
+        
         <AnimatedSection>
           <section className="py-20 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
