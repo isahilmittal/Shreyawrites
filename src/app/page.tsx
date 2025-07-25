@@ -209,7 +209,7 @@ export default function Home() {
         </AnimatedSection>
         
         <AnimatedSection>
-          <section className="py-20 lg:py-32 bg-background">
+          <section className="py-20 lg:py-32 bg-secondary">
             <div className="container mx-auto px-4 md:px-6">
               <div className="space-y-12">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
@@ -251,7 +251,7 @@ export default function Home() {
         </AnimatedSection>
         
         <AnimatedSection>
-          <section className="py-20 lg:py-32 bg-secondary">
+          <section className="py-20 lg:py-32 bg-background">
             <div className="container mx-auto px-4 md:px-6">
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Meta Ads Written By Me</h2>
@@ -376,7 +376,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl font-headline">More Brands I've Worked With</h2>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-8 gap-y-4 items-center">
-                {brands.slice(3, 19).map((brand) => (
+                {brands.slice(3).map((brand) => (
                     <div key={brand.id} className="flex justify-center group">
                         <div className="relative h-24 w-24 transition-transform duration-300 ease-in-out group-hover:scale-110">
                         <Image
