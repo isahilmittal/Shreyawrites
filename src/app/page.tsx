@@ -40,6 +40,34 @@ const metaAds = [
         logoUrl: 'https://placehold.co/150x80.png',
         websiteUrl: 'https://www.karseell.com/',
         imageHint: 'haircare product logo'
+    },
+    {
+        name: 'The Wellness Shop',
+        description: 'Turmeric-based facial care products for radiant skin.',
+        logoUrl: 'https://i.postimg.cc/ZBNRtGyy/image.png',
+        websiteUrl: 'https://www.thewellnessshop.in/',
+        imageHint: 'skincare brand logo'
+    },
+    {
+        name: 'Bee Venom Nail Treatment Serum',
+        description: 'Strengthens and rejuvenates damaged nails.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: null,
+        imageHint: 'nail care product logo'
+    },
+    {
+        name: 'Saam',
+        description: 'Renewal face cream for revitalized and youthful skin.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: null,
+        imageHint: 'face cream logo'
+    },
+    {
+        name: 'Black Hair Shampoo',
+        description: 'Quick gray coverage with herbal-based formula.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: null,
+        imageHint: 'hair product logo'
     }
 ];
 
