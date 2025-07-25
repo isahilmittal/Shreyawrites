@@ -5,12 +5,43 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { projects } from '@/lib/projects';
 import { brands } from '@/lib/brands';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
-import { ClipboardList, Megaphone, Users, Instagram } from 'lucide-react';
+import { ClipboardList, Megaphone, Users, Instagram, Globe } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/animated-section';
 import { Button } from '@/components/ui/button';
+
+const metaAds = [
+    {
+        name: 'Clearzal',
+        description: 'Pain-relief cream for targeted muscle and joint relief.',
+        logoUrl: 'https://i.postimg.cc/N5569MT6/image.png',
+        websiteUrl: 'https://clearzal.com/',
+        imageHint: 'pain relief cream logo'
+    },
+    {
+        name: 'Southmoon',
+        description: 'Foot spray formulated to soothe pain and fatigue.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: null,
+        imageHint: 'health product logo'
+    },
+    {
+        name: 'Bee Venom Psoriasis Spray',
+        description: 'A natural solution designed for psoriasis care.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: null,
+        imageHint: 'skincare product logo'
+    },
+    {
+        name: 'Karsell',
+        description: 'Hair collagen mask promoting deep repair and nourishment.',
+        logoUrl: 'https://placehold.co/150x80.png',
+        websiteUrl: 'https://www.karseell.com/',
+        imageHint: 'haircare product logo'
+    }
+];
 
 export default function Home() {
   return (
@@ -239,6 +270,47 @@ export default function Home() {
                   </div>
                 </div>
 
+              </div>
+            </div>
+          </section>
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <section className="py-20 lg:py-32 bg-secondary">
+            <div className="container mx-auto px-4 md:px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl font-headline">Meta Ads Written By Me</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {metaAds.map((ad) => (
+                  <Card key={ad.name} className="flex flex-col">
+                    <CardHeader>
+                      <div className="relative h-20 w-full mb-4">
+                        <Image
+                          src={ad.logoUrl}
+                          alt={`${ad.name} logo`}
+                          fill
+                          className="object-contain"
+                          data-ai-hint={ad.imageHint}
+                        />
+                      </div>
+                      <CardTitle className="font-headline text-xl">{ad.name}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <p className="text-muted-foreground">{ad.description}</p>
+                    </CardContent>
+                    <CardFooter>
+                      {ad.websiteUrl && (
+                        <Button asChild variant="outline" className="w-full">
+                          <Link href={ad.websiteUrl} target="_blank" rel="noopener noreferrer">
+                            <Globe className="mr-2 h-4 w-4" />
+                            Visit Website
+                          </Link>
+                        </Button>
+                      )}
+                    </CardFooter>
+                  </Card>
+                ))}
               </div>
             </div>
           </section>
