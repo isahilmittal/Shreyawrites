@@ -28,15 +28,15 @@ export const brands: Brand[] = [
   },
   {
     id: 'brand-b',
-    name: 'Urban Threads',
-    logoUrl: 'https://placehold.co/100x100.png',
-    imageHint: 'fashion logo',
-    instagramUsername: '@urbanthreads',
-    instagramUrl: '#',
+    name: 'Kitchen Rani',
+    logoUrl: 'https://i.postimg.cc/mPKFFyRR/image.png',
+    imageHint: 'food brand logo',
+    instagramUsername: '@kitchenraniofficial',
+    instagramUrl: 'https://www.instagram.com/kitchenraniofficial/',
     metrics: [
-      { value: '1.5M', label: 'Followers' },
-      { value: '4.8%', label: 'Engagement' },
-      { value: '120k+', label: 'Reels Views' },
+      { value: '500K+', label: 'Followers' },
+      { value: '5.2%', label: 'Engagement' },
+      { value: '150k+', label: 'Reels Views' },
     ],
   },
   {
