@@ -37,7 +37,7 @@ const metaAds = [
     {
         name: 'Karsell',
         description: 'Hair collagen mask promoting deep repair and nourishment.',
-        logoUrl: 'https://placehold.co/150x80.png',
+        logoUrl: 'https://i.postimg.cc/hJPPvJQg/image.png',
         websiteUrl: 'https://www.karseell.com/',
         imageHint: 'haircare product logo'
     },
