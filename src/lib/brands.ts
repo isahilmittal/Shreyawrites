@@ -67,5 +67,5 @@ export const brands: Brand[] = [
   { id: 'brand-16', name: 'Summit Gear', logoUrl: 'https://placehold.co/100x100.png', imageHint: 'outdoor logo', instagramUsername: '@summitgear', instagramUrl: '#', metrics: [] },
   { id: 'brand-17', name: 'Innovate AI', logoUrl: 'https://placehold.co/100x100.png', imageHint: 'ai logo', instagramUsername: '@innovateai', instagramUrl: '#', metrics: [] },
   { id: 'brand-18', name: 'Zenith Watches', logoUrl: 'https://placehold.co/100x100.png', imageHint: 'watch logo', instagramUsername: '@zenith', instagramUrl: '#', metrics: [] },
-  { id: 'brand-19', name: 'Ostruce', logoUrl: 'https://i.postimg.cc/0b6bpXf3/image.png', imageHint: 'fashion brand logo', instagramUsername: '@ostruceofficial', instagramUrl: 'https://www.instagram.com/ostruceofficial/', metrics: [] },
+  { id: 'brand-19', name: 'Ostruce', logoUrl: 'https://postimg.cc/0b6bpXf3', imageHint: 'fashion brand logo', instagramUsername: '@ostruceofficial', instagramUrl: 'https://www.instagram.com/ostruceofficial/', metrics: [] },
 ];
